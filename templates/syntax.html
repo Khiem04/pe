@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python syntax</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/mdb.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+
+
+<body>
+    <script type="text/javascript" src="../static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../static/js/popper.min.js"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../static/js/mdb.min.js"></script>
+
+
+    <!--Navbar -->
+    <nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color">
+        <a class="navbar-brand" href="/">
+            <img src="../static/images/Company logo.png" height="50" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+            aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/home">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">Intro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/learn">Learning</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Projects</a>
+                    <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="/beginner">For beginner</a>
+                        <a class="dropdown-item" href="/inter">For intermediate</a>
+                        <a class="dropdown-item" href="/advance">For pro</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">FAQ </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto nav-flex-icons">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-default"
+                        aria-labelledby="navbarDropdownMenuLink-333">
+                        <a class="dropdown-item" href="/logout">Log out</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--BOX 1 -->
+    <div class="container my-5 px-5 pt-5 pb-1 z-depth-1">
+
+
+        <!--Section: Content-->
+        <section class="text-center">
+          <!-- Section heading -->
+          <h2 class="font-weight-bold mb-5">Variable and data types  </h2>
+          <!-- Section description -->
+          <p class="text-center lead grey-text mx-auto mb-5">Things to remember about variable and data types</p>
+          <div class="container py-5 my-5">
+            <section class="p-md-3 mx-md-5">
+              <div class="row mb-5 d-flex align-items-center">
+                <div class="col-lg-6 col-md-6">
+                  <div class="card">
+                    <div class="card-header white">
+                      <h4 class="font-weight-bold mb-0">#1: Python naming rules</h4>
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">
+                        - Must start with a letter and separated with underscore(if the variable has 2 character)
+                      </p>
+                      <p class="card-text">
+                        - Variables are case-sensitives(eg. age, Age and aGe are 3 different variables)
+                      </p>
+                      <a class="blue-text font-weight-bold" href="https://www.w3schools.com/python/gloss_python_variable_names.asp">More about the rules </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="view overlay rounded z-depth-1">
+                    <img src="../static/images/name.png" class="img-fluid"
+                      alt="Sample project image" />
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-5 d-flex align-items-center justify-content-end">
+                <div class="col-md-6 col-lg-4">
+                  <div class="view overlay rounded z-depth-1">
+                    <img src="../static/images/roh.PNG" class="img-fluid"
+                      alt="Sample project image" />
+                    
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                  <div class="card">
+                    <div class="card-header white">
+                      <h4 class="font-weight-bold mb-0">Data type</h4>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            - Text type: string(str)
+                          </p>
+                          <p class="card-text">
+                            - Numeric type: integer(int), float , complex
+                          </p>
+                          <p class="card-text">
+                            - Sequence type: list, tuple, range
+                          </p>
+                          <p class="card-text">
+                            - Mapping type: dictionary(dict)
+                          </p>
+                          <p class="card-text">
+                            - Set types : Set, frozenset
+                          </p>
+                          <p class="card-text">
+                            - Boolean types: Boolean(bool)
+                          </p>
+                          <p class="card-text">
+                            - Binary types: bytes,bytearray, memoryview
+                          </p>
+                      <a class="blue-text font-weight-bold" href="https://www.w3schools.com/python/python_datatypes.asp">More about syntax</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
+                    
+             
+            </section>
+          </div>
+                </div>
+                <!--/.Panel 6-->
+      
+              </div>
+      
+            </div>
+            <!-- Grid column -->
+        
+          </div>
+          <!-- Grid row -->
+      
+        </section>
+        <!--Section: Content-->
+      
+<!--Box 2-->
+    </div>
+
+    <div class="container my-5 px-5 pt-5 pb-1 z-depth-1">
+
+
+      <!--Section: Content-->
+      <section class="text-center">
+        <!-- Section heading -->
+        <h2 class="font-weight-bold mb-5">Basic math operator in Python  </h2>
+        <!-- Section description -->
+        <p class="text-center lead grey-text mx-auto mb-5">Things to remember about operators</p>
+        <div class="container py-5 my-5">
+          <section class="p-md-3 mx-md-5">
+            <div class="row mb-5 d-flex align-items-center">
+              <div class="col-lg-6 col-md-6">
+                <div class="card">
+                  <div class="card-header white">
+                    <h4 class="font-weight-bold mb-0">What are operators </h4>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">
+                    - A symbol that execute operations between operands(e.g: addition, subtractions, multiplication, division)
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="view overlay rounded z-depth-1">
+                  <img src="../static/images/bruh.jpg" class="img-fluid"
+                    alt="Sample project image" />
+                  
+                </div>
+              </div>
+            </div>
+            <div class="row mb-5 d-flex align-items-center justify-content-end">
+              <div class="col-md-6 col-lg-4">
+                <div class="view overlay rounded z-depth-1">
+                  <img src="../static/images/Python-Operators-2.jpg" class="img-fluid"
+                    alt="Sample project image" />
+                  
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <div class="card">
+                  <div class="card-header white">
+                    <h4 class="font-weight-bold mb-0">Types of operators</h4>
+                  </div>
+                  <div class="card-body">
+                      <p class="card-text">
+                          Fall into 7 categories
+                        </p>
+                        <p class="card-text">
+                          + Arithmetic Sequence
+                        </p>
+                        <p class="card-text">
+                          + Relational Sequence
+                        </p>
+                        <p class="card-text">
+                          + Assignment Sequence
+                        </p>
+                        <p class="card-text">
+                          + Logical Sequence
+                        </p>
+                        <p class="card-text">
+                          + Membership Sequence
+                        </p>
+                        <p class="card-text">
+                          + Identity Sequence
+                        </p>
+                        <p class="card-text">
+                          + Bitwise Sequence
+                          </p>
+                    <a class="blue-text font-weight-bold" href="https://data-flair.training/blogs/python-operator/">More about Python operators</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+                  
+           
+          </section>
+        </div>
+              </div>
+              <!--/.Panel 6-->
+    
+            </div>
+    
+          </div>
+          <!-- Grid column -->
+      
+        </div>
+        <!-- Grid row -->
+    
+      </section>
+      <!--Section: Content-->
+    
+    
+    </div>
+
+
+
+
+
+
+      <!--BOX 3 -->
+      </div>
+
+      <div class="container my-5 px-5 pt-5 pb-1 z-depth-1">
+
+
+        <!--Section: Content-->
+        <section class="text-center">
+          <!-- Section heading -->
+          <h2 class="font-weight-bold mb-5">While loops and for loops statement </h2>
+          <!-- Section description -->
+          <p class="text-center lead grey-text mx-auto mb-5">Things to remember about loops in Python</p>
+          <div class="container py-5 my-5">
+            <section class="p-md-3 mx-md-5">
+              <div class="row mb-5 d-flex align-items-center">
+                <div class="col-lg-6 col-md-6">
+                  <div class="card">
+                    <div class="card-header white">
+                      <h4 class="font-weight-bold mb-0">#1: While loops</h4>
+                    </div>
+                    <div class="card-body">
+                      <class class="card-text">
+                        - While loops statement execute a statement as long as the condition given is true.
+                      </class>
+                      </p>
+                      <a class="blue-text font-weight-bold" href="https://www.w3schools.com/python/python_while_loops.asp">More about "While loops"</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="view overlay rounded z-depth-1">
+                    <img src="../static/images/python_while_loop.jpg" class="img-fluid"
+                      alt="Sample project image" />
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-5 d-flex align-items-center justify-content-end">
+                <div class="col-md-6 col-lg-4">
+                  <div class="view overlay rounded z-depth-1">
+                    <img src="../static/images/f2d9674dcbb66932dc04ebf9bfe32b84_for-loop.png" class="img-fluid"
+                      alt="Sample project image" />
+                    
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                  <div class="card">
+                    <div class="card-header white">
+                      <h4 class="font-weight-bold mb-0">For loops </h4>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            - Is a commmand that can be used to repeat a sequence(that can be a list, tuple, set, etc)
+                        </p>
+                          
+                      <a class="blue-text font-weight-bold" href="https://www.w3schools.com/python/python_for_loops.asp#:~:text=A%20for%20loop%20is%20used,set%2C%20or%20a%20string).&text=With%20the%20for%20loop%20we,list%2C%20tuple%2C%20set%20etc.">More about "For loops"</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
+                    
+             
+            </section>
+          </div>
+                </div>
+                <!--/.Panel 6-->
+      
+              </div>
+      
+            </div>
+            <!-- Grid column -->
+        
+          </div>
+          <!-- Grid row -->
+      
+        </section>
+        <!--Section: Content-->
+      
+      
+      </div>
